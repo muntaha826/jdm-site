@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    
+   background-color: rgb(243, 241, 241);
+}
+header{
+    background-color: rgba(31, 28, 28, 0.921);
+    color: whitesmoke;
+    text-align: center;
+   
+   
+padding: 30PX;
+
+font-size: large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+a{
+    color: black;
+    text-decoration-line: none;
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+   width: 100%;
+   justify-self: center;
+}
+
+main{
+
+    div{
+        border-radius: 30px;
+        padding:20px;
+     
+        margin-left: 5%;
+       margin-right: 5%;       
+        background-color: rgba(255, 255, 255, 0.651);
+        justify-content: center;
+        text-align: center;
+        #p1{
+            color: white;
+            padding-top: 90px;
+            padding-left: 30px;
+             padding-right: 30px;
+           
+            font-size: 40px;
+            padding-bottom:0%;
+
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px black;
+            
+        }
+        #p2{
+             padding-left: 30px;
+             padding-right: 30px;
+            
+           padding-top: 10px;
+
+             text-shadow: 1px 1px 5px black;
+             color: whitesmoke;
+             padding-bottom: 90px;
+        }
+    
+    button{   
+           
+        padding: 19px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+         border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+         }
+         button:hover{
+            background-color: rgba(70, 70, 219, 0.958);
+            color: aliceblue;
+            font-weight: bolder;
+         }
+          #h2{
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 1px 5px 5px gray;
+         }
+        
+    }
+}
+footer{
+    width: 100%;
+    justify-self: center;
+  margin-top: 40px;
+    background-color:rgba(31, 28, 28, 0.921) ;
+    padding: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.car_portion:hover{
+    box-shadow: 1px 5px 5px black;
+}
+.car_portion{
+ img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+ }
+    margin: 20px;
+    background-color:rgba(33, 5, 5, 0.096);
+   width: 30%;
+    min-width:400px;
+    overflow: hidden;
+   
+       h3{
+        padding: 10px;
+        color: blue;
+        font-size: xx-large;
+
+
+    }
+    button{
+        background-color: rgb(11, 202, 11);
+       a{ text-decoration-line: none;
+       }
+    }
+    button:hover{
+        background-color: rgb(104, 104, 203);
+        color: whitesmoke;
+        font-weight: bold;
+    }
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+@media(max-width:800px){
+    .car_portion{
+        width: 100%;
+    }
+}
+
+#divC{
+    
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       
+    
+}
+#divC2{
+    margin-top: 20px;
+    background-color: rgb(238, 237, 234);
+    justify-items: center;
+    
+    
+}
+form{
+  
+    text-align: left;
+    
+    .inputbox{
+        
+      min-width: 450px;
+      max-width: 88%;  
+      height: 30px;
+        
+    }
+    .email{
+        
+        
+      min-width: 450px;
+      max-width: 88%;  
+      height: 30px;
+        
+    
+    }
+    #msg1{
+        
+        
+        min-width: 450px;
+        max-width: 88%;
+        height: 100px;
+    }
+}
+#submit1{
+    font-weight: bolder;
+    min-width: 450px;
+        max-width: 88%;
+        background-color: rgb(72, 160, 214);
+}
+input{
+    border-radius: 10px;
+    background-color: rgb(246, 247, 248);
+    width: auto;
+}
+textarea{
+    border-radius: 10px;
+    border-width: 2.0px;
+    background-color: rgb(246, 247, 248);
+}
+#submit1:hover{
+    background-color: rgb(205, 30, 30);
+}
