@@ -35,22 +35,40 @@
     <p>Have questions, suggestions, or just want to talk about Japanese cars? Fill out the form below or reach us directly.</p>
 
 <div id="divC2">
-<form action="action.php">
+
+  <form id="myForm">
     <p>Your Name:</p>
-    <input class="inputbox" type="text" placeholder=" name" required>
-    <br>
-<br>
+    <input class="inputbox" type="text" name="name" placeholder="Your name" required>
+
     <p>Your Email:</p>
-    
-<input class="email" type="text" placeholder=" email" required>
-<br>
-<br>
-<p>Your Message</p>
-<textarea name="message" id="msg1" placeholder=" write your message"></textarea>
-<br>
-<input id="submit1" type="submit" placeholder="send message">
-</form>
-    
+    <input class="inputbox" type="email" name="email" placeholder="Your email" required>
+
+    <p>Your Message:</p>
+    <textarea class="inputbox" name="message" placeholder="Write your message" required></textarea>
+
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/PASTE_YOUR_SCRIPT_URL_HERE/exec';
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => {
+          alert("Form submitted successfully!");
+          form.reset();
+        })
+        .catch(error => {
+          alert("Something went wrong.");
+          console.error("Error!", error.message);
+        });
+    });
+  </script>
 
 
 </main>
